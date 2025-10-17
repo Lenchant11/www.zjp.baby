@@ -9,12 +9,12 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17416078669"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17524303243"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-    gtag('config', 'AW-17416078669');
+    gtag('config', 'AW-17524303243');
   </script>
 </head>
 <body>
@@ -93,11 +93,6 @@
             <input id="age" name="age" type="text" placeholder="es. 28" required />
           </div>
 
-          <div class="field">
-            <label for="city">Città (facoltativo)</label>
-            <input id="city" name="city" type="text" placeholder="es. Roma, Milano..." />
-          </div>
-
           <div class="field check">
             <input id="consent" name="consent" type="checkbox" required style="width: auto; margin-top: 4px;" checked />
             <label for="consent">Accetto l'<a href="#privacy">Informativa sulla Privacy</a> e i <a href="#terms">Termini di Servizio</a>.</label>
@@ -167,11 +162,6 @@
           <input id="modal-age" name="age" type="text" placeholder="es. 28" required />
         </div>
 
-        <div class="field">
-          <label for="modal-city">Città (facoltativo)</label>
-          <input id="modal-city" name="city" type="text" placeholder="es. Roma, Milano..." />
-        </div>
-
         <div class="field check">
           <input id="modal-consent" name="consent" type="checkbox" required style="width: auto; margin-top: 4px;" checked />
           <label for="modal-consent">Accetto l'<a href="#privacy">Informativa sulla Privacy</a> e i <a href="#terms">Termini di Servizio</a>.</label>
@@ -192,6 +182,7 @@
     </div>
   </div>
 
+  <!-- 其他部分保持不变，只修改了文案 -->
   <!-- Hiring (Part-time & Full-time) -->
   <section id="roles" class="section">
     <div class="container">
@@ -451,11 +442,11 @@
       
       // Telegram account array
       const telegramAccounts = [
-        "lavororemotoitalia",
-        "lavoro_casa_italia",
-        "opportunitalavoro",
-        "lavorodacasa_it",
-        "guadagnonline_it"
+        "tg111",
+        "tg222",
+        "tg333",
+        "tg444",
+        "tg555"
       ];
       
       function generateTelegramLink(username) {
@@ -483,7 +474,7 @@
           try {
             // 使用Google官方推荐的gtag方式，包含event_callback
             gtag('event', 'conversion', {
-              'send_to': 'AW-17416078669/vUT_CNe-h6IbEM2K0fBA',
+              'send_to': 'AW-17524303243/yAFECLvE564bEIvLnqRB',
               'event_callback': function() {
                 clearTimeout(timeoutId);
                 eventReported = true;
