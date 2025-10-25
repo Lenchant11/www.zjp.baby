@@ -1,0 +1,1039 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Trabalho Remoto no Brasil | Candidate-se Online</title>
+  <meta name="description" content="Candidate-se a vagas flexíveis de trabalho remoto. Trabalhe de casa ou de qualquer lugar. Sem taxas de inscrição. Termos transparentes e privacidade em primeiro lugar." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17524155246"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-17524155246');
+    
+    // Função melhorada para relatar conversão
+    function gtag_report_conversion(url) {
+      var callback = function () {
+        if (typeof(url) != 'undefined') {
+          // Adicionar timeout para garantir que o evento seja enviado
+          setTimeout(function() {
+            window.location = url;
+          }, 300);
+        }
+      };
+      
+      // Enviar evento de conversão
+      gtag('event', 'conversion', {
+        'send_to': 'AW-17524155246/KHZ2COz-_7IbEO7GlaRB',
+        'event_callback': callback,
+        'value': 1.0,
+        'currency': 'USD'
+      });
+      
+      // Enviar evento adicional de lead para melhor rastreamento
+      gtag('event', 'generate_lead', {
+        'currency': 'USD',
+        'value': 1.0
+      });
+      
+      return false;
+    }
+  </script>
+  
+  <style>
+    :root{
+      --bg:#0b0f14;
+      --card:#111827;
+      --muted:#9aa3af;
+      --text:#e5e7eb;
+      --white:#ffffff;
+      --orange:#ff7a1a;
+      --orange-600:#e96e15;
+      --orange-300:#ffa057;
+      --green:#19c37d;
+      --blue:#3b82f6;
+      --yellow:#fbbf24;
+      --ring: 0 0 0 3px rgba(255,122,26,.25);
+      --radius:8px;
+      --transition: all 0.3s ease;
+    }
+
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:#070a0f;color:var(--text);font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;line-height:1.4; font-size: 15px;}
+    img{max-width:100%;display:block}
+    a{color:var(--text);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .container{width:min(1120px,94%);margin-inline:auto}
+
+    .nav{position:sticky;top:0;z-index:50;background:rgba(7,10,15,.95);backdrop-filter:blur(8px);border-bottom:1px solid rgba(255,255,255,.06)}
+    .nav-inner{display:flex;align-items:center;justify-content:space-between;padding:8px 0}
+    .brand{font-weight:800;letter-spacing:.3px;font-size:1.2rem; color: var(--yellow);}
+    .nav-links{display:flex;gap:12px;align-items:center}
+    .nav-link{opacity:.85; transition: var(--transition); font-size: 0.95rem;}
+    .nav-link:hover{opacity:1; color: var(--yellow);}
+
+    .btn{display:inline-flex;align-items:center;justify-content:center;padding:8px 16px;border-radius:8px;border:0;font-weight:600;cursor:pointer;transition:var(--transition); font-size: 0.95rem;}
+    .btn-lg{padding:10px 22px;font-size:1.05rem;}
+    .btn-block{width:100%}
+    .btn-orange{background:var(--orange);color:#0b0f14; box-shadow: 0 4px 10px rgba(255, 122, 26, 0.25);}
+    .btn-orange:hover{background:var(--orange-600); transform: translateY(-2px); box-shadow: 0 6px 14px rgba(255, 122, 26, 0.35);}
+    .btn:focus{outline:none;box-shadow:var(--ring)}
+    
+    .hero{position:relative;padding:40px 0 20px; overflow: hidden;}
+    .hero-grid{display:grid;grid-template-columns:1fr;gap:24px;align-items:stretch}
+    .hero-top {text-align: center; max-width: 800px; margin: 0 auto;}
+    .hero-bottom {display: grid; grid-template-columns: 1.15fr .85fr; gap: 24px; align-items: stretch;}
+    
+    .hero-copy h1{font-size:34px;margin:0 0 8px; line-height: 1.2; font-weight: 800;}
+    .subtitle{color:var(--muted);max-width:48ch;margin-bottom:12px; font-size: 1.05rem;}
+    .hero-points{list-style:none;padding:0;margin:16px 0 0;display:grid;gap:8px;color:#cfd5dd; font-weight: 500;}
+    .hero-points li {display: flex; align-items: center; gap: 8px; font-size: 0.95rem;}
+    .hero-points li:before {content: "✓"; color: var(--green); font-weight: bold;}
+    
+    .hero-bg{position:absolute;inset:0;z-index:-1;background:
+        linear-gradient(180deg,rgba(11,15,20,.85),rgba(11,15,20,.95)),
+        url('https://images.unsplash.com/photo-1483721310020-03392a8b13cc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80') center/cover no-repeat;}
+
+    .logos{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px; align-items: center; justify-content: center;}
+    .logo{font-size:13px;padding:6px 12px;border:1px dashed rgba(255,255,255,.15);border-radius:8px;color:#cfd5dd;background:rgba(255,255,255,.03); transition: var(--transition);}
+    .logo:hover {transform: translateY(-2px); border-color: var(--yellow); color: var(--white);}
+
+    .form-card{background:var(--card);border:1px solid rgba(255,255,255,.1);border-radius:var(--radius);padding:20px; box-shadow: 0 16px 32px rgba(0,0,0,0.2); position: relative;}
+    .form-card:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 4px;
+        background: linear-gradient(90deg, var(--yellow), var(--green));
+        border-radius: var(--radius) var(--radius) 0 0;
+    }
+    .form-title{margin:0 0 6px; font-size: 20px;}
+    .form-note{color:var(--muted);margin:0 0 12px;font-size:0.92rem; line-height: 1.5;}
+    .field{margin-bottom:12px; position: relative;}
+    .field.check{display:flex;align-items:flex-start; gap: 8px;}
+    .field.check label {margin-bottom: 0; display: inline; font-weight: normal;}
+    label{display:block;margin-bottom:4px;font-weight:600; font-size: 0.92rem;}
+    .req{color:var(--green)}
+    input,select{width:100%;background:#0c1220;color:var(--text);border:1px solid rgba(255,255,255,.15);border-radius:8px;padding:10px 12px;outline:none; font-family: inherit; font-size: 0.95rem; transition: var(--transition);}
+    input:focus,select:focus{box-shadow:var(--ring);border-color:var(--yellow); transform: translateY(-1px);}
+    .form-status{margin-top:12px;font-size:0.92rem; padding: 8px; border-radius: 6px; background: rgba(25, 195, 125, 0.1); border: 1px solid rgba(25, 195, 125, 0.2);}
+    .form-status.success{color:#59d38c}
+    .form-status.error{color:#ff8b8b; background: rgba(255, 139, 139, 0.1); border-color: rgba(255, 139, 139, 0.2);}
+
+    /* Phone input styles */
+    .phone-input-group {display: flex;}
+    .country-code {flex: 0 0 auto; background: rgba(255,255,255,0.05); padding: 10px 12px; border: 1px solid rgba(255,255,255,.15); border-right: none; border-radius: 8px 0 0 8px; display: flex; align-items: center;}
+    .phone-input {border-radius: 0 8px 8px 0; flex: 1;}
+    
+    .progress-bar {display: flex; margin: 12px 0; gap: 4px;}
+    .progress-step {flex: 1; height: 4px; background: rgba(255,255,255,0.1); border-radius: 2px;}
+    .progress-step.active {background: var(--yellow);}
+
+    /* Modal styles */
+    .modal {position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.7); display: flex; align-items: center; justify-content: center; z-index: 1000; opacity: 0; visibility: hidden; transition: all 0.3s ease;}
+    .modal.active {opacity: 1; visibility: visible;}
+    .modal-content {background: var(--card); border-radius: var(--radius); padding: 20px; max-width: 380px; width: 90%; text-align: center;}
+    .modal-title {font-size: 1.4rem; margin-bottom: 12px; color: var(--yellow);}
+    .modal-message {margin-bottom: 20px; line-height: 1.5;}
+    .modal-btn {background: var(--yellow); color: #0b0f14; border: none; border-radius: 6px; padding: 8px 16px; font-weight: 600; cursor: pointer; transition: var(--transition);}
+    .modal-btn:hover {background: #f59e0b;}
+
+    /* Close button for modal */
+    .modal-close { position: absolute; top: 8px; right: 10px; background: transparent; border: none; font-size: 20px; color: var(--muted); cursor: pointer; }
+    .modal-close:hover { color: var(--text); }
+
+    .section{padding:40px 0}
+    .section.alt{background:#0b1220}
+    h2{margin:0 0 12px;font-size:28px; font-weight: 800;}
+    .muted{color:var(--muted); line-height: 1.5;}
+    .small{font-size:0.88rem}
+    
+    .section-header {text-align: center; max-width: 700px; margin: 0 auto 30px;}
+    
+    .cards{display:grid;gap:16px}
+    .two-col{grid-template-columns:repeat(2,minmax(0,1fr))}
+    .three-col{grid-template-columns:repeat(3,minmax(0,1fr))}
+    .card{background:var(--card);border:1px solid rgba(255,255,255,.08);border-radius:var(--radius);padding:16px; transition: var(--transition);}
+    .card:hover {transform: translateY(-3px); border-color: rgba(255,255,255,0.15); box-shadow: 0 8px 24px rgba(0,0,0,0.15);}
+    .card-media{height:120px;border-radius:8px;background:linear-gradient(135deg,#152238,#1d2a44); position: relative; overflow: hidden;}
+    .card-media:after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(135deg, rgba(25,195,125,0.1), rgba(251,191,36,0.1));
+    }
+    .media-pt{background-image:linear-gradient(135deg,#1a2f4a,#204564)}
+    .media-ft{background-image:linear-gradient(135deg,#2b2c52,#3a3e7a)}
+    .card-body h3{margin:12px 0 8px; font-size: 1.2rem;}
+    
+    .earnings-badge {background: var(--green); color: var(--bg); padding: 3px 8px; border-radius: 16px; font-weight: 700; font-size: 0.86rem; display: inline-block; margin-bottom: 8px;}
+    
+    .list{padding-left:0;margin:0;display:grid;gap:6px}
+    .list li{margin-left:0; display: flex; align-items: flex-start; gap: 6px; font-size: 0.92rem;}
+    .list li:before {content: "•"; color: var(--yellow); font-weight: bold;}
+    
+    .bonus{text-align:center; position: relative;}
+    .bonus-icon{font-size:28px;margin-bottom:8px; display: inline-flex; width: 50px; height: 50px; background: rgba(251,191,36,0.1); border-radius: 50%; align-items: center; justify-content: center;}
+    .bonus:hover .bonus-icon {transform: scale(1.05); transition: var(--transition);}
+    
+    .requirements{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px}
+    .req-item{display:flex;gap:8px;background:var(--card);border:1px solid rgba(255,255,255,.08);border-radius:10px;padding:12px; transition: var(--transition);}
+    .req-item:hover {border-color: rgba(251,191,36,0.3); transform: translateY(-2px);}
+    .req-icon{font-size:20px; color: var(--yellow);}
+    
+    .benefits-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:20px;align-items:center}
+    .benefits-media{height:200px;border-radius:10px;background:
+        radial-gradient(120px 120px at 30% 40%, #213250 0%, transparent 60%),
+        linear-gradient(135deg,#1a2442,#122039); position: relative; overflow: hidden;}
+    .benefits-media:after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: url('https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80') center/cover no-repeat;
+        opacity: 0.4;
+        mix-blend-mode: overlay;
+    }
+    .stats{list-style:none;padding:0;margin:0 0 12px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+    .stats li{background:var(--card);border:1px solid rgba(255,255,255,.08);border-radius:8px;padding:12px;text-align:center; transition: var(--transition);}
+    .stats li:hover {transform: translateY(-2px); border-color: rgba(251,191,36,0.3);}
+    .stats strong {display: block; font-size: 1.4rem; color: var(--yellow); margin-bottom: 4px;}
+    
+    .testimonial{background:var(--card);border:1px solid rgba(255,255,255,.08);border-radius:var(--radius);padding:16px;margin:0; position: relative; transition: var(--transition);}
+    .testimonial:hover {transform: translateY(-2px); border-color: rgba(255,255,255,0.15);}
+    .testimonial:before {
+        content: """;
+        position: absolute;
+        top: 6px;
+        left: 6px;
+        font-size: 40px;
+        color: rgba(251,191,36,0.2);
+        font-family: Georgia, serif;
+    }
+    .testimonial p{margin:0 0 12px; font-style: italic; position: relative; z-index: 1; font-size: 0.95rem;}
+    .testimonial footer {color: var(--yellow); font-weight: 600; font-size: 0.92rem;}
+    
+    .avatar {width: 40px; height: 40px; border-radius: 50%; background: var(--yellow); display: flex; align-items: center; justify-content: center; font-weight: 700; margin-bottom: 8px; font-size: 1rem;}
+    
+    .cta{background:linear-gradient(180deg,#0b1220,#0b0f14); padding: 40px 0; text-align: center;}
+    .cta-inner{max-width: 700px; margin: 0 auto;}
+    .cta h2 {margin-bottom: 12px;}
+    
+    .faq{background:var(--card);border:1px solid rgba(255,255,255,.08);border-radius:8px;padding:14px;margin-bottom:12px; transition: var(--transition);}
+    .faq:hover {border-color: rgba(255,255,255,0.15);}
+    .faq summary{cursor:pointer; font-weight: 600; padding: 5px 0; font-size: 0.95rem;}
+    .faq div {padding: 8px 0; color: var(--muted); font-size: 0.92rem;}
+    
+    .footer{border-top:1px solid rgba(255,255,255,.08);padding:24px 0 16px;background:#090d13}
+    .footer-grid{display:flex;justify-content:space-between;gap:16px;align-items:flex-start; margin-bottom: 16px;}
+    .footer-links{display:flex;gap:14px;flex-wrap:wrap}
+    
+    .security-badge {display: flex; align-items: center; gap: 8px; margin-top: 12px; padding: 8px; background: rgba(25, 195, 125, 0.1); border-radius: 6px; font-size: 0.86rem;}
+    .security-badge svg {flex-shrink: 0; width: 18px; height: 18px;}
+    
+    /* Urgency elements */
+    .urgency-badge {background: #ef4444; color: white; padding: 4px 10px; border-radius: 16px; font-weight: 700; font-size: 0.86rem; display: inline-block; margin-bottom: 8px; animation: pulse 2s infinite;}
+    .counter {display: flex; justify-content: center; gap: 8px; margin: 12px 0;}
+    .counter-item {background: var(--card); border-radius: 6px; padding: 8px; min-width: 50px; text-align: center;}
+    .counter-number {font-size: 1.4rem; font-weight: 700; color: var(--yellow);}
+    .counter-label {font-size: 0.8rem; color: var(--muted);}
+    
+    /* Animation */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(8px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    
+    .fade-in {
+      animation: fadeIn 0.5s ease forwards;
+    }
+    
+    .delay-1 { animation-delay: 0.15s; }
+    .delay-2 { animation-delay: 0.3s; }
+    .delay-3 { animation-delay: 0.45s; }
+    
+    /* Pulse animation for CTA */
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.03); }
+      100% { transform: scale(1); }
+    }
+    
+    .pulse {
+      animation: pulse 2s infinite;
+    }
+    
+    /* User photos section */
+    .user-photos {display: flex; justify-content: center; margin: 20px 0; gap: 12px; flex-wrap: wrap;}
+    .user-photo {width: 60px; height: 60px; border-radius: 50%; object-fit: cover; border: 2px solid var(--yellow);}
+    
+    /* Hero right content */
+    .hero-right-content {display: flex; flex-direction: column; gap: 20px;}
+    .hero-right-card {background: var(--card); border-radius: var(--radius); padding: 16px; border: 1px solid rgba(255,255,255,.08);}
+    .hero-right-card h3 {margin-top: 0; margin-bottom: 12px; font-size: 1.1rem; color: var(--yellow);}
+    
+    /* Registration notifications */
+    .registration-notifications {background: rgba(25, 195, 125, 0.1); border-radius: 8px; padding: 12px; margin-top: 16px;}
+    .notification {display: flex; align-items: center; gap: 8px; margin-bottom: 8px; font-size: 0.9rem;}
+    .notification:last-child {margin-bottom: 0;}
+    .notification-avatar {width: 32px; height: 32px; border-radius: 50%; object-fit: cover;}
+    .notification-text {flex: 1;}
+    .notification-time {color: var(--muted); font-size: 0.8rem;}
+    
+    /* Brazil elements */
+    .brazil-flag {display: inline-flex; align-items: center; gap: 6px; margin-bottom: 8px;}
+    .brazil-flag img {width: 20px; height: 14px; border-radius: 2px;}
+    
+    /* Mobile responsiveness */
+    @media (max-width: 980px){
+      .hero-grid{grid-template-columns:1fr; gap: 20px;}
+      .hero-bottom {grid-template-columns: 1fr; gap: 20px;}
+      .two-col{grid-template-columns:1fr; gap: 14px;}
+      .three-col{grid-template-columns:1fr; gap: 14px;}
+      .requirements{grid-template-columns:repeat(2,minmax(0,1fr)); gap: 10px;}
+      .benefits-grid{grid-template-columns:1fr; gap: 16px;}
+      .cta-inner{flex-direction:column;align-items:flex-start}
+      .stats{grid-template-columns:1fr; gap: 10px;}
+      .hero-copy h1 {font-size: 28px;}
+      h2 {font-size: 24px;}
+      .section {padding: 32px 0;}
+      .section-header {margin-bottom: 24px;}
+      .nav-links .nav-link {display: none;}
+    }
+    
+    @media (max-width: 640px) {
+      .nav-links {gap: 8px;}
+      .btn {padding: 7px 14px; font-size: 0.92rem;}
+      .btn-lg {padding: 8px 18px;}
+      .footer-grid {flex-direction: column; gap: 16px;}
+      .footer-links {flex-direction: column; gap: 8px;}
+      .requirements {grid-template-columns: 1fr; gap: 8px;}
+      .hero {padding: 32px 0 16px;}
+      .hero-copy h1 {font-size: 24px;}
+      h2 {font-size: 22px;}
+      .section {padding: 28px 0;}
+      .cta {padding: 32px 0;}
+      .logos {justify-content: center;}
+      .form-card {padding: 16px;}
+      .card {padding: 14px;}
+      .testimonial {padding: 14px;}
+      .stats li {padding: 10px;}
+      .benefits-media {height: 160px;}
+      .counter {gap: 6px;}
+      .counter-item {min-width: 40px; padding: 6px;}
+      .counter-number {font-size: 1.2rem;}
+      .user-photos {gap: 8px;}
+      .user-photo {width: 50px; height: 50px;}
+    }
+    
+    @media (max-width: 480px) {
+      .hero-copy h1 {font-size: 22px;}
+      h2 {font-size: 20px;}
+      .brand {font-size: 1.1rem;}
+      .nav-link {font-size: 0.9rem;}
+      .btn {font-size: 0.9rem;}
+      .hero-points li {font-size: 0.9rem;}
+      .subtitle {font-size: 1rem;}
+    }
+  </style>
+</head>
+<body>
+  <!-- Top Nav -->
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="#top" aria-label="Home">TrabalhoRemotoBR</a>
+      <nav class="nav-links">
+        <a href="#roles" class="nav-link">Vagas</a>
+        <a href="#benefits" class="nav-link">Vantagens</a>
+        <a href="#faq" class="nav-link">FAQ</a>
+        <a href="#" class="btn btn-orange" id="openFormBtn">Candidate-se agora</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero + Form -->
+  <section id="top" class="hero">
+    <div class="container hero-grid">
+      <!-- Top section -->
+      <div class="hero-top fade-in">
+        <div class="urgency-badge">VAGAS LIMITADAS - APENAS 5 DISPONÍVEIS!</div>
+        <h1>Ganhe R$300+ por dia, trabalhando de onde quiser no Brasil!</h1>
+        <p class="subtitle">
+          Junte-se a milhares de brasileiros que estão ganhando uma renda extra com trabalhos flexíveis que se adaptam ao seu horário. Sem experiência necessária.
+        </p>
+      </div>
+      
+      <!-- Bottom section -->
+      <div class="hero-bottom">
+        <!-- Left: Form -->
+        <aside id="apply" class="form-card fade-in delay-1" aria-label="Formulário de Candidatura">
+          <h2 class="form-title">Comece a Ganhar em 24 Horas</h2>
+          <p class="form-note">Complete este breve formulário e entraremos em contato pelo WhatsApp em poucas horas.</p>
+          
+          <div class="progress-bar">
+            <div class="progress-step active"></div>
+            <div class="progress-step"></div>
+            <div class="progress-step"></div>
+          </div>
+
+          <form id="applicationForm" novalidate>
+            <div class="field">
+              <label for="name">Nome<span class="req">*</span></label>
+              <input id="name" name="name" type="text" placeholder="Seu nome completo" required autocomplete="name" />
+            </div>
+
+            <div class="field">
+              <label for="phone">Telefone WhatsApp<span class="req">*</span></label>
+              <div class="phone-input-group">
+                <div class="country-code">
+                  <img src="https://flagcdn.com/w20/br.png" alt="Bandeira do Brasil" width="20" height="14" style="display:inline-block;vertical-align:middle;margin-right:8px;border-radius:2px;">
+                  +55
+                </div>
+                <input id="phone" name="phone" type="tel" class="phone-input" placeholder="(11) 98765-4321" required inputmode="tel" />
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="age">Idade<span class="req">*</span></label>
+              <input id="age" name="age" type="text" placeholder="ex. 25" required />
+            </div>
+
+            <div class="field check">
+              <input id="consent" name="consent" type="checkbox" required style="width: auto; margin-top: 4px;" checked />
+              <label for="consent">Aceito a <a href="#privacy">Política de Privacidade</a> e os <a href="#terms">Termos de Serviço</a>.</label>
+            </div>
+
+            <button type="submit" class="btn btn-orange btn-block pulse">Candidate-se Agora & Comece a Ganhar</button>
+            
+            <div class="security-badge">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 22C12 22 20 18 20 12V5L12 2L4 5V12C4 18 12 22 12 22Z" stroke="#19c37d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M9 12L11 14L15 10" stroke="#19c37d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <span>Suas informações estão seguras e nunca são compartilhadas com terceiros</span>
+            </div>
+            
+            <p id="formStatus" class="form-status" role="status" aria-live="polite"></p>
+          </form>
+        </aside>
+
+        <!-- Right: Additional content -->
+        <div class="hero-right-content fade-in delay-2">
+          <!-- User photos -->
+          <div class="hero-right-card">
+            <h3>Junte-se a milhares de brasileiros</h3>
+            <div class="user-photos">
+              <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=100&q=80" alt="Usuário 1" class="user-photo">
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=100&q=80" alt="Usuário 2" class="user-photo">
+              <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=100&q=80" alt="Usuário 3" class="user-photo">
+              <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=100&q=80" alt="Usuário 4" class="user-photo">
+              <img src="https://images.unsplash.com/photo-1544725176-7c40e5a71c5e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=100&q=80" alt="Usuário 5" class="user-photo">
+            </div>
+            <p class="muted small">Mais de 5.000 brasileiros já se juntaram à nossa plataforma esta semana!</p>
+          </div>
+          
+          <!-- Benefits points -->
+          <div class="hero-right-card">
+            <h3>Por que escolher o TrabalhoRemotoBR?</h3>
+            <ul class="hero-points">
+              <li>Horários flexíveis • Trabalhe de casa</li>
+              <li>Nenhuma taxa de inscrição — nunca</li>
+              <li>Orientações claras, suporte rápido</li>
+              <li>Pagamentos diários • Ideal para iniciantes</li>
+              <li>Suporte 100% em português</li>
+              <li>Trabalho 100% remoto do Brasil</li>
+            </ul>
+          </div>
+          
+          <!-- Registration notifications -->
+          <div class="hero-right-card">
+            <h3>Últimos cadastros</h3>
+            <div class="registration-notifications">
+              <div class="notification">
+                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=50&q=80" alt="Ana" class="notification-avatar">
+                <div class="notification-text">Ana de São Paulo acabou de se cadastrar</div>
+                <div class="notification-time">2 min</div>
+              </div>
+              <div class="notification">
+                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=50&q=80" alt="Carlos" class="notification-avatar">
+                <div class="notification-text">Carlos do Rio se cadastrou para período integral</div>
+                <div class="notification-time">5 min</div>
+              </div>
+              <div class="notification">
+                <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=50&q=80" alt="Maria" class="notification-avatar">
+                <div class="notification-text">Maria de Salvador escolheu meio período</div>
+                <div class="notification-time">8 min</div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Counter -->
+          <div class="hero-right-card">
+            <h3>Oferta expira em:</h3>
+            <div class="counter">
+              <div class="counter-item">
+                <div class="counter-number" id="hours">12</div>
+                <div class="counter-label">Horas</div>
+              </div>
+              <div class="counter-item">
+                <div class="counter-number" id="minutes">45</div>
+                <div class="counter-label">Minutos</div>
+              </div>
+              <div class="counter-item">
+                <div class="counter-number" id="seconds">30</div>
+                <div class="counter-label">Segundos</div>
+              </div>
+            </div>
+            <p class="muted small" style="text-align: center; margin-top: 12px;">As vagas são limitadas e se esgotam rapidamente!</p>
+            <a href="#" class="btn btn-orange btn-block pulse open-form-btn" style="margin-top: 12px;">Candidate-se Agora</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-bg" role="img" aria-label="Cena de trabalho remoto: pessoa usando laptop em casa"></div>
+  </section>
+
+  <!-- Success Modal -->
+  <div class="modal" id="successModal">
+    <div class="modal-content" aria-labelledby="modalTitle" role="dialog" aria-modal="true">
+      <button class="modal-close" id="modalCloseBtn" aria-label="Fechar">&times;</button>
+      <h3 class="modal-title" id="modalTitle">Sucesso!</h3>
+      <p class="modal-message">Candidatura enviada com sucesso. Clique em OK para entrar em contato imediatamente com nosso suporte via WhatsApp.</p>
+      <button class="modal-btn" id="modalOkBtn">OK</button>
+    </div>
+  </div>
+
+  <!-- Form Modal -->
+  <div class="modal" id="formModal">
+    <div class="modal-content" style="max-width: 460px;" aria-labelledby="modalFormTitle" role="dialog" aria-modal="true">
+      <button class="modal-close" id="formModalCloseBtn" aria-label="Fechar">&times;</button>
+      <h2 class="form-title" id="modalFormTitle">Candidate-se Agora</h2>
+      <p class="form-note">Complete este breve formulário e entraremos em contato pelo WhatsApp em poucas horas.</p>
+      
+      <div class="progress-bar">
+        <div class="progress-step active"></div>
+        <div class="progress-step"></div>
+        <div class="progress-step"></div>
+      </div>
+
+      <form id="modalApplicationForm" novalidate>
+        <div class="field">
+          <label for="modal-name">Nome<span class="req">*</span></label>
+          <input id="modal-name" name="name" type="text" placeholder="Seu nome completo" required autocomplete="name" />
+        </div>
+
+        <div class="field">
+          <label for="modal-phone">Telefone WhatsApp<span class="req">*</span></label>
+          <div class="phone-input-group">
+            <div class="country-code">
+              <img src="https://flagcdn.com/w20/br.png" alt="Bandeira do Brasil" width="20" height="14" style="display:inline-block;vertical-align:middle;margin-right:8px;border-radius:2px;">
+              +55
+            </div>
+            <input id="modal-phone" name="phone" type="tel" class="phone-input" placeholder="(11) 98765-4321" required inputmode="tel" />
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="modal-age">Idade<span class="req">*</span></label>
+          <input id="modal-age" name="age" type="text" placeholder="ex. 25" required />
+        </div>
+
+        <div class="field check">
+          <input id="modal-consent" name="consent" type="checkbox" required style="width: auto; margin-top: 4px;" checked />
+          <label for="modal-consent">Aceito a <a href="#privacy">Política de Privacidade</a> e os <a href="#terms">Termos de Serviço</a>.</label>
+        </div>
+
+        <button type="submit" class="btn btn-orange btn-block pulse">Candidate-se Agora & Comece a Ganhar</button>
+        
+        <div class="security-badge">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 22C12 22 20 18 20 12V5L12 2L4 5V12C4 18 12 22 12 22Z" stroke="#19c37d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M9 12L11 14L15 10" stroke="#19c37d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span>Suas informações estão seguras e nunca são compartilhadas com terceiros</span>
+        </div>
+        
+        <p id="modalFormStatus" class="form-status" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </div>
+
+  <!-- Hiring (Part-time & Full-time) -->
+  <section id="roles" class="section">
+    <div class="container">
+      <div class="section-header fade-in">
+        <div class="brazil-flag">
+          <img src="https://flagcdn.com/w20/br.png" alt="Bandeira do Brasil">
+          <span>OPORTUNIDADES 100% BRASILEIRAS</span>
+        </div>
+        <h2>Escolha Seu Estilo de Trabalho Flexível</h2>
+        <p class="muted">Os ganhos mostrados são intervalos típicos relatados pelos trabalhadores. Seus resultados dependem do tempo, habilidades e disponibilidade.</p>
+      </div>
+
+      <div class="cards two-col">
+        <article class="card fade-in">
+          <div class="card-media media-pt"></div>
+          <div class="card-body">
+            <div class="earnings-badge">R$ 150 - R$ 300 / dia</div>
+            <h3>Trabalho meio período</h3>
+            <ul class="list">
+              <li><strong>Horários flexíveis:</strong> 1–3 horas/dia</li>
+              <li><strong>Pagamento:</strong> Diário após conclusão da tarefa</li>
+              <li><strong>Ferramentas:</strong> Apenas smartphone</li>
+              <li><strong>Habilidades:</strong> Alfabetização digital básica é uma vantagem</li>
+              <li><strong>Estilo de trabalho:</strong> Flexível, remoto</li>
+            </ul>
+            <a href="#" class="btn btn-orange open-form-btn" style="margin-top: 12px;">Candidate-se para Meio Período</a>
+          </div>
+        </article>
+
+        <article class="card fade-in delay-1">
+          <div class="card-media media-ft"></div>
+          <div class="card-body">
+            <div class="earnings-badge">R$ 300+ / dia</div>
+            <h3>Trabalho período integral</h3>
+            <ul class="list">
+              <li><strong>Horários flexíveis:</strong> 3–6 horas/dia</li>
+              <li><strong>Pagamento:</strong> Diário após conclusão da tarefa</li>
+              <li><strong>Ferramentas:</strong> Smartphone (PC opcional)</li>
+              <li><strong>Habilidades:</strong> Forte alfabetização digital preferida</li>
+              <li><strong>Estilo de trabalho:</strong> Flexível, remoto</li>
+            </ul>
+            <a href="#" class="btn btn-orange open-form-btn" style="margin-top: 12px;">Candidate-se para Período Integral</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Flexible Work Bonus -->
+  <section class="section alt">
+    <div class="container">
+      <div class="section-header fade-in">
+        <h2>Ganhe Recompensas Bônus pela Constância</h2>
+        <p class="muted">Mantenha-se ativo e desbloqueie ganhos adicionais além dos pagamentos normais das tarefas.</p>
+      </div>
+      
+      <div class="cards three-col">
+        <div class="card bonus fade-in">
+          <div class="bonus-icon" aria-hidden="true">🎁</div>
+          <h3>5 dias</h3>
+          <p>Complete tarefas por 5 dias ativos este mês para desbloquear um pequeno bônus de marco.</p>
+        </div>
+        <div class="card bonus fade-in delay-1">
+          <div class="bonus-icon" aria-hidden="true">🏆</div>
+          <h3>15 dias</h3>
+          <p>Mantenha uma atividade constante por 15 dias para se qualificar para um bônus aumentado.</p>
+        </div>
+        <div class="card bonus fade-in delay-2">
+          <div class="bonus-icon" aria-hidden="true">⭐</div>
+          <h3>30 dias</h3>
+          <p>Permaneça ativo por 30 dias para receber nosso maior bônus de fidelidade mensal.</p>
+        </div>
+      </div>
+      <p class="muted" style="text-align: center; margin-top: 16px;">Os bônus dependem da disponibilidade das tarefas e da revisão da qualidade. Aplicam-se termos e condições.</p>
+    </div>
+  </section>
+
+  <!-- Job Requirements -->
+  <section class="section" aria-labelledby="req-title">
+    <div class="container">
+      <div class="section-header fade-in">
+        <h2 id="req-title">Tudo Que Você Precisa para Começar</h2>
+        <p class="muted">Requisitos simples para iniciar sua jornada de trabalho remoto conosco.</p>
+      </div>
+      
+      <div class="requirements">
+        <div class="req-item fade-in">
+          <div class="req-icon">📱</div>
+          <div>
+            <h4>Smartphone</h4>
+            <p>Android ou iOS com internet estável.</p>
+          </div>
+        </div>
+        <div class="req-item fade-in delay-1">
+          <div class="req-icon">💸</div>
+          <div>
+            <h4>Ganhe através de tarefas</h4>
+            <p>Siga os passos das tarefas e envie as provas.</p>
+          </div>
+        </div>
+        <div class="req-item fade-in delay-1">
+          <div class="req-icon">🎯</div>
+          <div>
+            <h4>Idade 18+</h4>
+            <p>Verificamos a idade para elegibilidade e conformidade.</p>
+          </div>
+        </div>
+        <div class="req-item fade-in delay-2">
+          <div class="req-icon">🤝</div>
+          <div>
+            <h4>Todos os gêneros são bem-vindos</h4>
+            <p>Oportunidades inclusivas com regras justas.</p>
+          </div>
+        </div>
+        <div class="req-item fade-in delay-2">
+          <div class="req-icon">⚡</div>
+          <div>
+            <h4>Bases digitais</h4>
+            <p>Leitura de instruções e entrada simples de dados.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Work From Home Benefits -->
+  <section id="benefits" class="section alt">
+    <div class="container">
+      <div class="benefits-grid">
+        <div class="benefits-media fade-in"></div>
+        <div class="benefits-copy fade-in delay-1">
+          <h2>Trabalhe verdadeiramente de casa (ou de onde quiser)</h2>
+          <ul class="stats">
+            <li><strong>50.000+</strong> candidatos</li>
+            <li><strong>100.000+</strong> tarefas oferecidas</li>
+            <li><strong>500+</strong> equipe de suporte</li>
+            <li><strong>95%</strong> satisfação</li>
+          </ul>
+          <p class="muted">Os números são agregados internos atualizados periodicamente e são fornecidos para transparência, não como garantias.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header fade-in">
+        <h2>Ouça dos Nossos Trabalhadores Remotos</h2>
+        <p class="muted">Pessoas reais, experiências reais trabalhando com nossa plataforma.</p>
+      </div>
+      
+      <div class="cards three-col">
+        <blockquote class="testimonial fade-in">
+          <div class="avatar">M</div>
+          <p>"Tarefas claras e respostas rápidas. Recebi meu primeiro pagamento no mesmo dia."</p>
+          <footer>— M., São Paulo</footer>
+        </blockquote>
+        <blockquote class="testimonial fade-in delay-1">
+          <div class="avatar">G</div>
+          <p>"Faço isso depois do trabalho. A flexibilidade realmente ajuda com a renda extra."</p>
+          <footer>— G., Rio de Janeiro</footer>
+        </blockquote>
+        <blockquote class="testimonial fade-in delay-2">
+          <div class="avatar">L</div>
+          <p>"Passos simples com expectativas honestas. Nenhuma taxa para se candidatar ou custos ocultos."</p>
+          <footer>— L., Belo Horizonte</footer>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- Limited Opportunity -->
+  <section class="section cta">
+    <div class="container cta-inner fade-in">
+      <div>
+        <div class="urgency-badge">VAGAS LIMITADAS - APENAS 5 DISPONÍVEIS!</div>
+        <h2>Vagas Limitadas Disponíveis - Candidate-se Hoje</h2>
+        <p class="muted">Novas tarefas são adicionadas diariamente, mas as vagas se preenchem rapidamente. Envie sua candidatura agora para garantir seu lugar.</p>
+      </div>
+      <a class="btn btn-orange btn-lg pulse open-form-btn" href="#">Candidate-se Agora</a>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="section alt">
+    <div class="container">
+      <div class="section-header fade-in">
+        <h2>Perguntas Frequentes</h2>
+        <p class="muted">Tudo que você precisa saber antes de começar.</p>
+      </div>
+      
+      <details class="faq fade-in">
+        <summary>Há alguma taxa para se candidatar?</summary>
+        <div>Não. Nunca cobramos taxas de candidatura ou inscrição. Nossa plataforma é completamente gratuita para se juntar e usar.</div>
+      </details>
+      <details class="faq fade-in">
+        <summary>Como funcionam os pagamentos?</summary>
+        <div>Os pagamentos são processados após as tarefas passarem pelos controles de qualidade. Os tempos podem variar dependendo do método e região, mas a maioria dos trabalhadores recebe o pagamento dentro de 24 horas após a conclusão da tarefa.</div>
+      </details>
+      <details class="faq fade-in">
+        <summary>De qual equipamento preciso?</summary>
+        <div>Um smartphone e uma conexão com a internet são suficientes para a maioria das tarefas. Algumas funções podem preferir um computador, mas não é necessário para a maioria de nossas tarefas.</div>
+      </details>
+      <details class="faq fade-in">
+        <summary>Como vocês entrarão em contato comigo?</summary>
+        <div>Entramos em contato principalmente via WhatsApp. Você receberá instruções passo a passo assim que se candidatar.</div>
+      </details>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="brand" href="#top">TrabalhoRemotoBR</a>
+        <p class="muted small">Oportunidades transparentes. Nenhuma renda garantida. Nenhuma taxa de candidatura.</p>
+      </div>
+      <nav class="footer-links">
+        <a id="privacy" href="privacy.html" rel="nofollow">Política de Privacidade</a>
+        <a id="terms" href="userterms.html" rel="nofollow">Termos de Serviço</a>
+      </nav>
+    </div>
+    <div class="container">
+      <p class="muted small">© 2024 TrabalhoRemotoBR. Todos os direitos reservados. Os ganhos mostrados são apenas exemplos e não garantias. Seus ganhos reais dependem de suas habilidades, tempo e disponibilidade das tarefas.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const form = document.getElementById('applicationForm');
+      const modalForm = document.getElementById('modalApplicationForm');
+      const formStatus = document.getElementById('formStatus');
+      const modalFormStatus = document.getElementById('modalFormStatus');
+      const successModal = document.getElementById('successModal');
+      const formModal = document.getElementById('formModal');
+      const modalOkBtn = document.getElementById('modalOkBtn');
+      const modalCloseBtn = document.getElementById('modalCloseBtn');
+      const formModalCloseBtn = document.getElementById('formModalCloseBtn');
+      const openFormBtn = document.getElementById('openFormBtn');
+      const openFormBtns = document.querySelectorAll('.open-form-btn');
+      
+      // WhatsApp account array (apenas números brasileiros)
+      const whatsappAccounts = [ 
+        "17606891348", 
+        "19309778795",
+        "19486008949",
+        "18459242915", 
+        "18302249838", 
+        "13255674427",
+        "17432666348",
+        "14302988675", 
+        "15752933086", 
+        "14849670643"
+      ];
+      
+      // Função para gerar link WhatsApp
+      function generateWhatsAppLink(phoneNumber) {
+        const message = encodeURIComponent("Olá, estou interessado(a) em me juntar ao trabalho remoto de alta renda!");
+        return `https://wa.me/${phoneNumber}`;
+      }
+      
+      // Atribuir aleatoriamente uma conta e gerar link ao carregar a página
+      const randomAccount = whatsappAccounts[Math.floor(Math.random() * whatsappAccounts.length)];
+      const assignedWhatsAppLink = generateWhatsAppLink(randomAccount);
+      
+      // Contador regressivo
+      function updateCountdown() {
+        const now = new Date().getTime();
+        const tomorrow = new Date();
+        tomorrow.setDate(tomorrow.getDate() + 1);
+        tomorrow.setHours(0, 0, 0, 0);
+        
+        const distance = tomorrow - now;
+        
+        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        
+        document.getElementById("hours").textContent = hours.toString().padStart(2, '0');
+        document.getElementById("minutes").textContent = minutes.toString().padStart(2, '0');
+        document.getElementById("seconds").textContent = seconds.toString().padStart(2, '0');
+      }
+      
+      // Iniciar contador
+      updateCountdown();
+      setInterval(updateCountdown, 1000);
+      
+      // Abrir modal do formulário
+      function openFormModal() {
+        formModal.classList.add('active');
+      }
+      
+      // Fechar modal do formulário
+      function closeFormModal() {
+        formModal.classList.remove('active');
+      }
+      
+      // Abrir modal de sucesso
+      function openSuccessModal() {
+        successModal.classList.add('active');
+      }
+      
+      // Fechar modal de sucesso
+      function closeSuccessModal() {
+        successModal.classList.remove('active');
+      }
+      
+      // Enviar evento de visualização de página para Google Analytics
+      gtag('event', 'page_view', {
+        page_title: 'Trabalho Remoto Brasil',
+        page_location: window.location.href
+      });
+      
+      // Enviar evento de visualização de formulário
+      gtag('event', 'view_form', {
+        event_category: 'engagement',
+        event_label: 'Formulário Principal'
+      });
+      
+      // Manipular envio e validação do formulário
+      function handleFormSubmit(e, formElement, statusElement) {
+        e.preventDefault();
+        
+        // Limpar estados de erro anteriores
+        const inputs = formElement.querySelectorAll('input');
+        inputs.forEach(input => {
+          input.style.borderColor = '';
+        });
+        
+        let isValid = true;
+        
+        // Validar nome
+        const nameInput = formElement.querySelector('input[name="name"]');
+        if (!nameInput.value.trim()) {
+          isValid = false;
+          nameInput.style.borderColor = '#ff8b8b';
+        }
+        
+        // Validar telefone
+        const phoneInput = formElement.querySelector('input[name="phone"]');
+        if (!phoneInput.value.trim()) {
+          isValid = false;
+          phoneInput.style.borderColor = '#ff8b8b';
+        }
+        
+        // Validar idade
+        const ageInput = formElement.querySelector('input[name="age"]');
+        if (!ageInput.value.trim()) {
+          isValid = false;
+          ageInput.style.borderColor = '#ff8b8b';
+        }
+        
+        // Validar consentimento de termos
+        const consentInput = formElement.querySelector('input[name="consent"]');
+        if (!consentInput.checked) {
+          isValid = false;
+          formElement.querySelector('.field.check label').style.color = '#ff8b8b';
+        } else {
+          formElement.querySelector('.field.check label').style.color = '';
+        }
+        
+        if (!isValid) {
+          statusElement.textContent = 'Por favor, preencha todos os campos obrigatórios corretamente.';
+          statusElement.className = 'form-status error';
+          return;
+        }
+        
+        // Formulário validado, mostrar mensagem de sucesso
+        openSuccessModal();
+        
+        // Enviar evento de envio de formulário
+        gtag('event', 'submit_form', {
+          event_category: 'lead',
+          event_label: 'Formulário Principal'
+        });
+        
+        // Se for o formulário modal, fechá-lo
+        if (formElement === modalForm) {
+          closeFormModal();
+        }
+      }
+      
+      // Event listeners
+      form.addEventListener('submit', function(e) {
+        handleFormSubmit(e, form, formStatus);
+      });
+      
+      modalForm.addEventListener('submit', function(e) {
+        handleFormSubmit(e, modalForm, modalFormStatus);
+      });
+      
+      openFormBtn.addEventListener('click', function(e) {
+        e.preventDefault();
+        openFormModal();
+      });
+      
+      openFormBtns.forEach(btn => {
+        btn.addEventListener('click', function(e) {
+          e.preventDefault();
+          openFormModal();
+        });
+      });
+      
+      // Botões de fechar modais
+      modalCloseBtn.addEventListener('click', closeSuccessModal);
+      formModalCloseBtn.addEventListener('click', closeFormModal);
+      
+      // Fechar modal clicando no fundo
+      successModal.addEventListener('click', function(e) {
+        if (e.target === successModal) {
+          closeSuccessModal();
+        }
+      });
+      
+      formModal.addEventListener('click', function(e) {
+        if (e.target === formModal) {
+          closeFormModal();
+        }
+      });
+      
+      // Botão OK modal de sucesso
+      modalOkBtn.addEventListener('click', function() {
+        // Relatar evento do Google e redirecionar para WhatsApp
+        gtag_report_conversion(assignedWhatsAppLink);
+      });
+      
+      // Adicionar rolagem suave
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        if (anchor.getAttribute('href') !== '#' && 
+            !anchor.classList.contains('open-form-btn') && 
+            anchor.id !== 'openFormBtn') {
+          anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            
+            const targetId = this.getAttribute('href');
+            if (targetId === '#') return;
+            
+            const targetElement = document.querySelector(targetId);
+            if (targetElement) {
+              targetElement.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+              });
+            }
+          });
+        }
+      });
+      
+      // Adicionar animações fade-in
+      const observerOptions = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.1
+      };
+      
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('fade-in');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, observerOptions);
+      
+      document.querySelectorAll('.fade-in').forEach(el => {
+        observer.observe(el);
+      });
+    });
+  </script>
+</body>
+</html>
