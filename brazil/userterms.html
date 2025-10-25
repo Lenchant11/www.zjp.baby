@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Termos de Serviço | TrabalhoRemotoBR</title>
+  <meta name="description" content="Termos de Serviço do TrabalhoRemotoBR. Conheça os direitos, responsabilidades e condições de uso de nossa plataforma." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <style>
+    :root{
+      --bg:#0b0f14;
+      --card:#111827;
+      --muted:#9aa3af;
+      --text:#e5e7eb;
+      --white:#ffffff;
+      --orange:#ff7a1a;
+      --orange-600:#e96e15;
+      --orange-300:#ffa057;
+      --green:#19c37d;
+      --blue:#3b82f6;
+      --yellow:#fbbf24;
+      --ring: 0 0 0 3px rgba(255,122,26,.25);
+      --radius:8px;
+      --transition: all 0.3s ease;
+    }
+
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:#070a0f;color:var(--text);font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;line-height:1.6; font-size: 15px;}
+    img{max-width:100%;display:block}
+    a{color:var(--text);text-decoration:none}
+    a:hover{text-decoration:underline; color: var(--yellow);}
+    .container{width:min(1120px,94%);margin-inline:auto}
+
+    .nav{position:sticky;top:0;z-index:50;background:rgba(7,10,15,.95);backdrop-filter:blur(8px);border-bottom:1px solid rgba(255,255,255,.06)}
+    .nav-inner{display:flex;align-items:center;justify-content:space-between;padding:8px 0}
+    .brand{font-weight:800;letter-spacing:.3px;font-size:1.2rem; color: var(--yellow);}
+    .nav-links{display:flex;gap:12px;align-items:center}
+    .nav-link{opacity:.85; transition: var(--transition); font-size: 0.95rem;}
+    .nav-link:hover{opacity:1; color: var(--yellow);}
+
+    .btn{display:inline-flex;align-items:center;justify-content:center;padding:8px 16px;border-radius:8px;border:0;font-weight:600;cursor:pointer;transition:var(--transition); font-size: 0.95rem;}
+    .btn-lg{padding:10px 22px;font-size:1.05rem;}
+    .btn-block{width:100%}
+    .btn-orange{background:var(--orange);color:#0b0f14; box-shadow: 0 4px 10px rgba(255, 122, 26, 0.25);}
+    .btn-orange:hover{background:var(--orange-600); transform: translateY(-2px); box-shadow: 0 6px 14px rgba(255, 122, 26, 0.35);}
+    .btn:focus{outline:none;box-shadow:var(--ring)}
+    
+    .hero{position:relative;padding:40px 0 20px; overflow: hidden;}
+    .hero-bg{position:absolute;inset:0;z-index:-1;background:
+        linear-gradient(180deg,rgba(11,15,20,.85),rgba(11,15,20,.95)),
+        url('https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80') center/cover no-repeat;}
+
+    .section{padding:40px 0}
+    .section.alt{background:#0b1220}
+    h1{margin:0 0 12px;font-size:32px; font-weight: 800;}
+    h2{margin:30px 0 16px;font-size:24px; font-weight: 700; color: var(--yellow);}
+    h3{margin:24px 0 12px;font-size:20px; font-weight: 600;}
+    .muted{color:var(--muted); line-height: 1.5;}
+    .small{font-size:0.88rem}
+    
+    .content-card{background:var(--card);border:1px solid rgba(255,255,255,.1);border-radius:var(--radius);padding:30px; box-shadow: 0 16px 32px rgba(0,0,0,0.2); position: relative;}
+    .content-card:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 4px;
+        background: linear-gradient(90deg, var(--yellow), var(--green));
+        border-radius: var(--radius) var(--radius) 0 0;
+    }
+    
+    .footer{border-top:1px solid rgba(255,255,255,.08);padding:24px 0 16px;background:#090d13}
+    .footer-grid{display:flex;justify-content:space-between;gap:16px;align-items:flex-start; margin-bottom: 16px;}
+    .footer-links{display:flex;gap:14px;flex-wrap:wrap}
+    
+    .security-badge {display: flex; align-items: center; gap: 8px; margin-top: 12px; padding: 8px; background: rgba(25, 195, 125, 0.1); border-radius: 6px; font-size: 0.86rem;}
+    .security-badge svg {flex-shrink: 0; width: 18px; height: 18px;}
+    
+    /* List styles */
+    .terms-list {padding-left: 20px; margin: 16px 0;}
+    .terms-list li {margin-bottom: 8px;}
+    
+    /* Table of contents */
+    .toc {background: rgba(255,255,255,0.05); border-radius: var(--radius); padding: 20px; margin: 24px 0;}
+    .toc h3 {margin-top: 0; color: var(--yellow);}
+    .toc ul {padding-left: 20px; margin: 0;}
+    .toc li {margin-bottom: 8px;}
+    
+    /* Highlight box */
+    .highlight {background: rgba(251,191,36,0.1); border-left: 4px solid var(--yellow); padding: 16px; margin: 20px 0; border-radius: 0 var(--radius) var(--radius) 0;}
+    
+    /* Warning box */
+    .warning {background: rgba(239,68,68,0.1); border-left: 4px solid #ef4444; padding: 16px; margin: 20px 0; border-radius: 0 var(--radius) var(--radius) 0;}
+    
+    /* Definition list */
+    .definition-list {margin: 20px 0;}
+    .definition-term {font-weight: 600; color: var(--yellow); margin-top: 16px;}
+    .definition-description {margin: 4px 0 16px; padding-left: 16px;}
+    
+    /* Animation */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(8px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    
+    .fade-in {
+      animation: fadeIn 0.5s ease forwards;
+    }
+    
+    .delay-1 { animation-delay: 0.15s; }
+    .delay-2 { animation-delay: 0.3s; }
+    
+    /* Mobile responsiveness */
+    @media (max-width: 980px){
+      h1 {font-size: 28px;}
+      h2 {font-size: 22px;}
+      .section {padding: 32px 0;}
+      .content-card {padding: 24px;}
+    }
+    
+    @media (max-width: 640px) {
+      .nav-links {gap: 8px;}
+      .btn {padding: 7px 14px; font-size: 0.92rem;}
+      .btn-lg {padding: 8px 18px;}
+      .footer-grid {flex-direction: column; gap: 16px;}
+      .footer-links {flex-direction: column; gap: 8px;}
+      .hero {padding: 32px 0 16px;}
+      h1 {font-size: 24px;}
+      h2 {font-size: 20px;}
+      h3 {font-size: 18px;}
+      .section {padding: 28px 0;}
+      .content-card {padding: 20px;}
+    }
+    
+    @media (max-width: 480px) {
+      h1 {font-size: 22px;}
+      h2 {font-size: 19px;}
+      .brand {font-size: 1.1rem;}
+      .nav-link {font-size: 0.9rem;}
+      .btn {font-size: 0.9rem;}
+    }
+  </style>
+</head>
+<body>
+  <!-- Top Nav -->
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html" aria-label="Home">TrabalhoRemotoBR</a>
+      <nav class="nav-links">
+        <a href="index.html#roles" class="nav-link">Vagas</a>
+        <a href="index.html#benefits" class="nav-link">Vantagens</a>
+        <a href="index.html#faq" class="nav-link">FAQ</a>
+        <a href="index.html" class="btn btn-orange">Voltar para o Site</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="fade-in">
+        <h1>Termos de Serviço</h1>
+        <p class="muted" style="max-width: 700px;">
+          Estes Termos de Serviço regulam o uso da plataforma TrabalhoRemotoBR. Ao utilizar nossos serviços, você concorda com estes termos e condições.
+        </p>
+      </div>
+    </div>
+    <div class="hero-bg" role="img" aria-label="Imagem de fundo representando acordo e contrato"></div>
+  </section>
+
+  <!-- Terms Content -->
+  <section class="section">
+    <div class="container">
+      <div class="content-card fade-in">
+        <!-- Table of Contents -->
+        <div class="toc">
+          <h3>Sumário</h3>
+          <ul>
+            <li><a href="#acceptance">Aceitação dos Termos</a></li>
+            <li><a href="#definitions">Definições</a></li>
+            <li><a href="#registration">Cadastro e Conta</a></li>
+            <li><a href="#services">Serviços Prestados</a></li>
+            <li><a href="#user-obligations">Obrigações do Usuário</a></li>
+            <li><a href="#payments">Pagamentos e Remuneração</a></li>
+            <li><a href="#intellectual-property">Propriedade Intelectual</a></li>
+            <li><a href="#privacy">Privacidade e Dados</a></li>
+            <li><a href="#liability">Limitação de Responsabilidade</a></li>
+            <li><a href="#termination">Rescisão</a></li>
+            <li><a href="#changes">Alterações nos Termos</a></li>
+            <li><a href="#jurisdiction">Foro e Legislação</a></li>
+            <li><a href="#contact">Contato</a></li>
+          </ul>
+        </div>
+
+        <!-- Terms Content Sections -->
+        <div class="terms-content">
+          <section id="acceptance">
+            <h2>1. Aceitação dos Termos</h2>
+            <p>Ao acessar ou utilizar os serviços do TrabalhoRemotoBR, você concorda em ficar vinculado a estes Termos de Serviço. Se você não concordar com qualquer parte destes termos, não poderá utilizar nossos serviços.</p>
+            
+            <div class="highlight">
+              <p><strong>Importante:</strong> Estes termos constituem um acordo legalmente vinculativo entre você e o TrabalhoRemotoBR. Recomendamos que leia atentamente todos os termos antes de utilizar nossos serviços.</p>
+            </div>
+          </section>
+
+          <section id="definitions">
+            <h2>2. Definições</h2>
+            <p>Para fins destes Termos de Serviço, as seguintes definições se aplicam:</p>
+            
+            <div class="definition-list">
+              <div class="definition-term">Plataforma</div>
+              <div class="definition-description">Refere-se ao site TrabalhoRemotoBR, aplicativos móveis e todos os serviços relacionados.</div>
+              
+              <div class="definition-term">Usuário/Trabalhador</div>
+              <div class="definition-description">Pessoa física que se cadastra na plataforma para prestar serviços remotos.</div>
+              
+              <div class="definition-term">Cliente/Contratante</div>
+              <div class="definition-description">Pessoa jurídica ou física que utiliza a plataforma para encontrar trabalhadores remotos.</div>
+              
+              <div class="definition-term">Serviços</div>
+              <div class="definition-description">Tarefas e atividades realizadas pelos trabalhadores através da plataforma.</div>
+              
+              <div class="definition-term">Conteúdo</div>
+              <div class="definition-description">Qualquer informação, texto, imagem ou outro material publicado na plataforma.</div>
+            </div>
+          </section>
+
+          <section id="registration">
+            <h2>3. Cadastro e Conta</h2>
+            <h3>3.1. Requisitos para Cadastro</h3>
+            <ul class="terms-list">
+              <li>Ter pelo menos 18 anos de idade</li>
+              <li>Fornecer informações verdadeiras e completas</li>
+              <li>Possuir capacidade legal para celebrar contratos</li>
+              <li>Ter conta ativa no WhatsApp para comunicação</li>
+            </ul>
+            
+            <h3>3.2. Responsabilidade da Conta</h3>
+            <ul class="terms-list">
+              <li>Você é responsável por manter a confidencialidade de suas credenciais de acesso</li>
+              <li>Deve notificar imediatamente qualquer uso não autorizado de sua conta</li>
+              <li>É proibido transferir ou compartilhar sua conta com terceiros</li>
+              <li>Podemos suspender ou cancelar contas que violarem estes termos</li>
+            </ul>
+            
+            <div class="warning">
+              <p><strong>Atenção:</strong> Fornecer informações falsas ou incompletas pode resultar no cancelamento imediato da conta e perda de quaisquer valores pendentes.</p>
+            </div>
+          </section>
+
+          <section id="services">
+            <h2>4. Serviços Prestados</h2>
+            <h3>4.1. Natureza dos Serviços</h3>
+            <p>O TrabalhoRemotoBR atua como intermediário entre trabalhadores remotos e clientes, oferecendo:</p>
+            <ul class="terms-list">
+              <li>Divulgação de oportunidades de trabalho remoto</li>
+              <li>Intermediação na comunicação entre partes</li>
+              <li>Facilitação de pagamentos (quando aplicável)</li>
+              <li>Suporte técnico e operacional</li>
+            </ul>
+            
+            <h3>4.2. Limitações</h3>
+            <ul class="terms-list">
+              <li>Não garantimos disponibilidade constante de tarefas</li>
+              <li>Os valores de remuneração são estimativas e podem variar</li>
+              <li>Não somos empregadores dos trabalhadores cadastrados</li>
+              <li>Não nos responsabilizamos por acordos diretos entre usuários</li>
+            </ul>
+            
+            <div class="highlight">
+              <p><strong>Observação:</strong> O TrabalhoRemotoBR não é um empregador, mas sim uma plataforma de intermediação. Os trabalhadores atuam como prestadores de serviços independentes.</p>
+            </div>
+          </section>
+
+          <section id="user-obligations">
+            <h2>5. Obrigações do Usuário</h2>
+            <h3>5.1. Conduta Geral</h3>
+            <p>Ao utilizar nossa plataforma, você concorda em:</p>
+            <ul class="terms-list">
+              <li>Manter conduta profissional e ética</li>
+              <li>Respeitar prazos e compromissos assumidos</li>
+              <li>Comunicar-se de forma clara e respeitosa</li>
+              <li>Fornecer serviços com qualidade e diligência</li>
+              <li>Reportar problemas ou dificuldades oportunamente</li>
+            </ul>
+            
+            <h3>5.2. Condutas Proibidas</h3>
+            <p>É estritamente proibido:</p>
+            <ul class="terms-list">
+              <li>Pratificar qualquer tipo de discriminação ou assédio</li>
+              <li>Compartilhar conteúdo ilegal, ofensivo ou inadequado</li>
+              <li>Tentar burlar sistemas de segurança ou pagamento</li>
+              <li>Utilizar a plataforma para atividades fraudulentas</li>
+              <li>Violar direitos de propriedade intelectual de terceiros</li>
+              <li>Fornecer informações falsas ou enganosas</li>
+            </ul>
+          </section>
+
+          <section id="payments">
+            <h2>6. Pagamentos e Remuneração</h2>
+            <h3>6.1. Modelo de Remuneração</h3>
+            <ul class="terms-list">
+              <li>Os valores são definidos por tarefa ou projeto</li>
+              <li>Pagamentos são processados após aprovação do trabalho</li>
+              <li>Prazos de pagamento podem variar conforme o método</li>
+              <li>Taxas de plataforma podem ser aplicadas (quando informadas)</li>
+            </ul>
+            
+            <h3>6.2. Responsabilidades Fiscais</h3>
+            <p>Como prestador de serviços independente, você é responsável por:</p>
+            <ul class="terms-list">
+              <li>Emitir notas fiscais quando necessário</li>
+              <li>Declarar rendimentos à Receita Federal</li>
+              <li>Arcar com encargos tributários aplicáveis</li>
+              <li>Manter documentação fiscal em ordem</li>
+            </ul>
+            
+            <div class="warning">
+              <p><strong>Importante:</strong> Os valores mostrados na plataforma são exemplos e não garantias. Seus ganhos reais dependem de diversos fatores, incluindo disponibilidade de tarefas, qualidade do trabalho e demanda do mercado.</p>
+            </div>
+          </section>
+
+          <section id="intellectual-property">
+            <h2>7. Propriedade Intelectual</h2>
+            <h3>7.1. Direitos da Plataforma</h3>
+            <p>O TrabalhoRemotoBR detém todos os direitos sobre:</p>
+            <ul class="terms-list">
+              <li>Marca, logo e identidade visual</li>
+              <li>Código-fonte e software da plataforma</li>
+              <li>Conteúdo institucional e materiais promocionais</li>
+              <li>Base de dados de usuários (em conformidade com a LGPD)</li>
+            </ul>
+            
+            <h3>7.2. Direitos dos Usuários</h3>
+            <ul class="terms-list">
+              <li>Você mantém os direitos sobre o trabalho por você produzido</li>
+              <li>Ao publicar conteúdo, concede licença de uso à plataforma</li>
+              <li>É proibido utilizar marcas da plataforma sem autorização</li>
+              <li>Deve respeitar direitos autorais de terceiros</li>
+            </ul>
+          </section>
+
+          <section id="privacy">
+            <h2>8. Privacidade e Dados</h2>
+            <p>O tratamento de dados pessoais é regido pela nossa <a href="privacy.html">Política de Privacidade</a> e pela Lei Geral de Proteção de Dados (LGPD).</p>
+            
+            <ul class="terms-list">
+              <li>Coletamos apenas dados necessários para prestação dos serviços</li>
+              <li>Utilizamos medidas de segurança para proteger suas informações</li>
+              <li>Compartilhamos dados apenas quando necessário e autorizado</li>
+              <li>Respeitamos seus direitos de acesso, correção e exclusão de dados</li>
+            </ul>
+            
+            <div class="security-badge">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 22C12 22 20 18 20 12V5L12 2L4 5V12C4 18 12 22 12 22Z" stroke="#19c37d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M9 12L11 14L15 10" stroke="#19c37d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <span>Seus dados estão protegidos de acordo com as melhores práticas de segurança e a legislação brasileira.</span>
+            </div>
+          </section>
+
+          <section id="liability">
+            <h2>9. Limitação de Responsabilidade</h2>
+            <h3>9.1. Isenções</h3>
+            <p>O TrabalhoRemotoBR não se responsabiliza por:</p>
+            <ul class="terms-list">
+              <li>Qualidade de serviços prestados por usuários</li>
+              <li>Descumprimento de acordos entre usuários</li>
+              <li>Danos decorrentes de uso inadequado da plataforma</li>
+              <li>Problemas técnicos além de nosso controle razoável</li>
+              <li>Conteúdo publicado por terceiros na plataforma</li>
+            </ul>
+            
+            <h3>9.2. Responsabilidade do Usuário</h3>
+            <p>Você é integralmente responsável por:</p>
+            <ul class="terms-list">
+              <li>Serviços prestados através da plataforma</li>
+              <li>Comunicação e acordos com outros usuários</li>
+              <li>Cumprimento de obrigações fiscais e legais</li>
+              <li>Danos causados a terceiros</li>
+            </ul>
+          </section>
+
+          <section id="termination">
+            <h2>10. Rescisão</h2>
+            <h3>10.1. Rescisão pelo Usuário</h3>
+            <p>Você pode encerrar sua conta a qualquer momento através das configurações da plataforma ou entrando em contato conosco.</p>
+            
+            <h3>10.2. Rescisão pela Plataforma</h3>
+            <p>Podemos suspender ou encerrar contas que:</p>
+            <ul class="terms-list">
+              <li>Violarem estes Termos de Serviço</li>
+              <li>Pratiquem atividades fraudulentas ou ilegais</li>
+              <li>Comprometam a segurança da plataforma</li>
+              <li>Causem prejuízos a outros usuários</li>
+            </ul>
+            
+            <div class="highlight">
+              <p><strong>Efeitos da Rescisão:</strong> O encerramento da conta resultará na perda de acesso à plataforma e pode afetar o recebimento de valores pendentes, conforme as circunstâncias específicas.</p>
+            </div>
+          </section>
+
+          <section id="changes">
+            <h2>11. Alterações nos Termos</h2>
+            <p>Reservamo-nos o direito de modificar estes Termos de Serviço a qualquer momento. Alterações significativas serão comunicadas com antecedência razoável.</p>
+            
+            <ul class="terms-list">
+              <li>Notificaremos sobre alterações por e-mail ou através da plataforma</li>
+              <li>O uso continuado após alterações constitui aceitação dos novos termos</li>
+              <li>Alterações não retroagem para serviços já prestados</li>
+              <li>Manteremos versões anteriores dos termos disponíveis</li>
+            </ul>
+          </section>
+
+          <section id="jurisdiction">
+            <h2>12. Foro e Legislação</h2>
+            <h3>12.1. Legislação Aplicável</h3>
+            <p>Estes Termos são regidos pelas leis da República Federativa do Brasil, especialmente:</p>
+            <ul class="terms-list">
+              <li>Código Civil Brasileiro</li>
+              <li>Código de Defesa do Consumidor (quando aplicável)</li>
+              <li>Lei Geral de Proteção de Dados (LGPD)</li>
+              <li>Legislação trabalhista e tributária pertinente</li>
+            </ul>
+            
+            <h3>12.2. Solução de Controversas</h3>
+            <p>Em caso de disputas, as partes buscarão primeiramente solução amigável. Não sendo possível, fica eleito o Foro da Comarca de São Paulo/SP para dirimir quaisquer questões.</p>
+          </section>
+
+          <section id="contact">
+            <h2>13. Contato</h2>
+            <p>Para questões relacionadas a estes Termos de Serviço, entre em contato conosco:</p>
+            
+            <div style="background: rgba(255,255,255,0.05); padding: 16px; border-radius: var(--radius); margin: 16px 0;">
+              <p><strong>TrabalhoRemotoBR</strong></p>
+              <p>E-mail: <a href="mailto:support@yqh.baby">support@zjp.baby</a></p>
+              <p>Telefone: +55 (11) 1234-5678</p>
+              <p>Horário de atendimento: Segunda a Sexta, 9h às 18h</p>
+              <p>Endereço: Av. Paulista, 1000 - São Paulo/SP, CEP: 01310-100</p>
+            </div>
+            
+            <div class="security-badge">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 22C12 22 20 18 20 12V5L12 2L4 5V12C4 18 12 22 12 22Z" stroke="#19c37d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M9 12L11 14L15 10" stroke="#19c37d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <span>Estamos comprometidos em fornecer um ambiente seguro e transparente para todos os usuários.</span>
+            </div>
+          </section>
+          
+          <div style="text-align: center; margin-top: 40px; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.1);">
+            <p class="muted small">Última atualização: 15 de Novembro de 2024</p>
+            <a href="index.html" class="btn btn-orange" style="margin-top: 16px;">Voltar para o Site Principal</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="brand" href="index.html">TrabalhoRemotoBR</a>
+        <p class="muted small">Oportunidades transparentes. Nenhuma renda garantida. Nenhuma taxa de candidatura.</p>
+      </div>
+      <nav class="footer-links">
+        <a href="index.html">Página Inicial</a>
+        <a href="privacy.html">Política de Privacidade</a>
+        <a href="userterms.html">Termos de Serviço</a>
+      </nav>
+    </div>
+    <div class="container">
+      <p class="muted small">© 2024 TrabalhoRemotoBR. Todos os direitos reservados. Os ganhos mostrados são apenas exemplos e não garantias. Seus ganhos reais dependem de suas habilidades, tempo e disponibilidade das tarefas.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Smooth scrolling for table of contents links
+      document.querySelectorAll('.toc a').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+          e.preventDefault();
+          
+          const targetId = this.getAttribute('href');
+          const targetElement = document.querySelector(targetId);
+          
+          if (targetElement) {
+            targetElement.scrollIntoView({
+              behavior: 'smooth',
+              block: 'start'
+            });
+            
+            // Update URL without page reload
+            history.pushState(null, null, targetId);
+          }
+        });
+      });
+      
+      // Add fade-in animations
+      const observerOptions = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.1
+      };
+      
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('fade-in');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, observerOptions);
+      
+      document.querySelectorAll('.fade-in').forEach(el => {
+        observer.observe(el);
+      });
+    });
+  </script>
+</body>
+</html>
