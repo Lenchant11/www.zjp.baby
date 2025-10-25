@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Política de Privacidade | TrabalhoRemotoBR</title>
+  <meta name="description" content="Política de Privacidade do TrabalhoRemotoBR. Saiba como coletamos, usamos e protegemos suas informações pessoais." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <style>
+    :root{
+      --bg:#0b0f14;
+      --card:#111827;
+      --muted:#9aa3af;
+      --text:#e5e7eb;
+      --white:#ffffff;
+      --orange:#ff7a1a;
+      --orange-600:#e96e15;
+      --orange-300:#ffa057;
+      --green:#19c37d;
+      --blue:#3b82f6;
+      --yellow:#fbbf24;
+      --ring: 0 0 0 3px rgba(255,122,26,.25);
+      --radius:8px;
+      --transition: all 0.3s ease;
+    }
+
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:#070a0f;color:var(--text);font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;line-height:1.6; font-size: 15px;}
+    img{max-width:100%;display:block}
+    a{color:var(--text);text-decoration:none}
+    a:hover{text-decoration:underline; color: var(--yellow);}
+    .container{width:min(1120px,94%);margin-inline:auto}
+
+    .nav{position:sticky;top:0;z-index:50;background:rgba(7,10,15,.95);backdrop-filter:blur(8px);border-bottom:1px solid rgba(255,255,255,.06)}
+    .nav-inner{display:flex;align-items:center;justify-content:space-between;padding:8px 0}
+    .brand{font-weight:800;letter-spacing:.3px;font-size:1.2rem; color: var(--yellow);}
+    .nav-links{display:flex;gap:12px;align-items:center}
+    .nav-link{opacity:.85; transition: var(--transition); font-size: 0.95rem;}
+    .nav-link:hover{opacity:1; color: var(--yellow);}
+
+    .btn{display:inline-flex;align-items:center;justify-content:center;padding:8px 16px;border-radius:8px;border:0;font-weight:600;cursor:pointer;transition:var(--transition); font-size: 0.95rem;}
+    .btn-lg{padding:10px 22px;font-size:1.05rem;}
+    .btn-block{width:100%}
+    .btn-orange{background:var(--orange);color:#0b0f14; box-shadow: 0 4px 10px rgba(255, 122, 26, 0.25);}
+    .btn-orange:hover{background:var(--orange-600); transform: translateY(-2px); box-shadow: 0 6px 14px rgba(255, 122, 26, 0.35);}
+    .btn:focus{outline:none;box-shadow:var(--ring)}
+    
+    .hero{position:relative;padding:40px 0 20px; overflow: hidden;}
+    .hero-bg{position:absolute;inset:0;z-index:-1;background:
+        linear-gradient(180deg,rgba(11,15,20,.85),rgba(11,15,20,.95)),
+        url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80') center/cover no-repeat;}
+
+    .section{padding:40px 0}
+    .section.alt{background:#0b1220}
+    h1{margin:0 0 12px;font-size:32px; font-weight: 800;}
+    h2{margin:30px 0 16px;font-size:24px; font-weight: 700; color: var(--yellow);}
+    h3{margin:24px 0 12px;font-size:20px; font-weight: 600;}
+    .muted{color:var(--muted); line-height: 1.5;}
+    .small{font-size:0.88rem}
+    
+    .content-card{background:var(--card);border:1px solid rgba(255,255,255,.1);border-radius:var(--radius);padding:30px; box-shadow: 0 16px 32px rgba(0,0,0,0.2); position: relative;}
+    .content-card:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 4px;
+        background: linear-gradient(90deg, var(--yellow), var(--green));
+        border-radius: var(--radius) var(--radius) 0 0;
+    }
+    
+    .footer{border-top:1px solid rgba(255,255,255,.08);padding:24px 0 16px;background:#090d13}
+    .footer-grid{display:flex;justify-content:space-between;gap:16px;align-items:flex-start; margin-bottom: 16px;}
+    .footer-links{display:flex;gap:14px;flex-wrap:wrap}
+    
+    .security-badge {display: flex; align-items: center; gap: 8px; margin-top: 12px; padding: 8px; background: rgba(25, 195, 125, 0.1); border-radius: 6px; font-size: 0.86rem;}
+    .security-badge svg {flex-shrink: 0; width: 18px; height: 18px;}
+    
+    /* List styles */
+    .privacy-list {padding-left: 20px; margin: 16px 0;}
+    .privacy-list li {margin-bottom: 8px;}
+    
+    /* Table of contents */
+    .toc {background: rgba(255,255,255,0.05); border-radius: var(--radius); padding: 20px; margin: 24px 0;}
+    .toc h3 {margin-top: 0; color: var(--yellow);}
+    .toc ul {padding-left: 20px; margin: 0;}
+    .toc li {margin-bottom: 8px;}
+    
+    /* Highlight box */
+    .highlight {background: rgba(251,191,36,0.1); border-left: 4px solid var(--yellow); padding: 16px; margin: 20px 0; border-radius: 0 var(--radius) var(--radius) 0;}
+    
+    /* Animation */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(8px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    
+    .fade-in {
+      animation: fadeIn 0.5s ease forwards;
+    }
+    
+    .delay-1 { animation-delay: 0.15s; }
+    .delay-2 { animation-delay: 0.3s; }
+    
+    /* Mobile responsiveness */
+    @media (max-width: 980px){
+      h1 {font-size: 28px;}
+      h2 {font-size: 22px;}
+      .section {padding: 32px 0;}
+      .content-card {padding: 24px;}
+    }
+    
+    @media (max-width: 640px) {
+      .nav-links {gap: 8px;}
+      .btn {padding: 7px 14px; font-size: 0.92rem;}
+      .btn-lg {padding: 8px 18px;}
+      .footer-grid {flex-direction: column; gap: 16px;}
+      .footer-links {flex-direction: column; gap: 8px;}
+      .hero {padding: 32px 0 16px;}
+      h1 {font-size: 24px;}
+      h2 {font-size: 20px;}
+      h3 {font-size: 18px;}
+      .section {padding: 28px 0;}
+      .content-card {padding: 20px;}
+    }
+    
+    @media (max-width: 480px) {
+      h1 {font-size: 22px;}
+      h2 {font-size: 19px;}
+      .brand {font-size: 1.1rem;}
+      .nav-link {font-size: 0.9rem;}
+      .btn {font-size: 0.9rem;}
+    }
+  </style>
+</head>
+<body>
+  <!-- Top Nav -->
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html" aria-label="Home">TrabalhoRemotoBR</a>
+      <nav class="nav-links">
+        <a href="index.html#roles" class="nav-link">Vagas</a>
+        <a href="index.html#benefits" class="nav-link">Vantagens</a>
+        <a href="index.html#faq" class="nav-link">FAQ</a>
+        <a href="index.html" class="btn btn-orange">Voltar para o Site</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="fade-in">
+        <h1>Política de Privacidade</h1>
+        <p class="muted" style="max-width: 700px;">
+          Esta Política de Privacidade descreve como o TrabalhoRemotoBR coleta, usa, compartilha e protege as informações dos usuários de nosso site e serviços. Ao utilizar nossos serviços, você concorda com os termos aqui descritos.
+        </p>
+      </div>
+    </div>
+    <div class="hero-bg" role="img" aria-label="Imagem de fundo abstrata representando segurança digital"></div>
+  </section>
+
+  <!-- Privacy Content -->
+  <section class="section">
+    <div class="container">
+      <div class="content-card fade-in">
+        <!-- Table of Contents -->
+        <div class="toc">
+          <h3>Sumário</h3>
+          <ul>
+            <li><a href="#info-collection">Informações que Coletamos</a></li>
+            <li><a href="#info-use">Como Usamos suas Informações</a></li>
+            <li><a href="#info-sharing">Compartilhamento de Informações</a></li>
+            <li><a href="#cookies">Cookies e Tecnologias Similares</a></li>
+            <li><a href="#data-security">Segurança de Dados</a></li>
+            <li><a href="#user-rights">Seus Direitos</a></li>
+            <li><a href="#data-retention">Retenção de Dados</a></li>
+            <li><a href="#lgpd">Conformidade com a LGPD</a></li>
+            <li><a href="#changes">Alterações nesta Política</a></li>
+            <li><a href="#contact">Contato</a></li>
+          </ul>
+        </div>
+
+        <!-- Privacy Content Sections -->
+        <div class="privacy-content">
+          <section id="info-collection">
+            <h2>1. Informações que Coletamos</h2>
+            <p>Coletamos diferentes tipos de informações para fornecer e melhorar nossos serviços:</p>
+            
+            <h3>Informações Pessoais</h3>
+            <ul class="privacy-list">
+              <li><strong>Informações de identificação:</strong> nome completo, endereço de e-mail, número de telefone, data de nascimento</li>
+              <li><strong>Informações de perfil:</strong> experiência profissional, habilidades, preferências de trabalho</li>
+              <li><strong>Informações de contato:</strong> número do WhatsApp para comunicação</li>
+            </ul>
+            
+            <h3>Informações Automáticas</h3>
+            <ul class="privacy-list">
+              <li><strong>Dados de uso:</strong> páginas visitadas, tempo gasto no site, cliques</li>
+              <li><strong>Dados técnicos:</strong> endereço IP, tipo de navegador, dispositivo utilizado, sistema operacional</li>
+              <li><strong>Cookies e tecnologias similares:</strong> para melhorar a experiência do usuário</li>
+            </ul>
+          </section>
+
+          <section id="info-use">
+            <h2>2. Como Usamos suas Informações</h2>
+            <p>Utilizamos suas informações para os seguintes propósitos:</p>
+            
+            <ul class="privacy-list">
+              <li><strong>Prestação de serviços:</strong> conectar você com oportunidades de trabalho remoto</li>
+              <li><strong>Comunicação:</strong> enviar atualizações sobre vagas, oportunidades e informações relevantes</li>
+              <li><strong>Melhoria de serviços:</strong> analisar dados para melhorar nossa plataforma e serviços</li>
+              <li><strong>Segurança:</strong> proteger nossa plataforma e usuários contra atividades fraudulentas</li>
+              <li><strong>Conformidade legal:</strong> cumprir obrigações legais e regulatórias</li>
+              <li><strong>Marketing:</strong> enviar comunicações sobre novos serviços e oportunidades (com seu consentimento)</li>
+            </ul>
+            
+            <div class="highlight">
+              <p><strong>Base Legal:</strong> Todo processamento de dados é baseado em bases legais adequadas conforme a LGPD, incluindo consentimento, execução de contrato e legítimo interesse.</p>
+            </div>
+          </section>
+
+          <section id="info-sharing">
+            <h2>3. Compartilhamento de Informações</h2>
+            <p>Podemos compartilhar suas informações nas seguintes situações:</p>
+            
+            <ul class="privacy-list">
+              <li><strong>Parceiros de trabalho:</strong> empresas que oferecem oportunidades de trabalho remoto (apenas informações necessárias)</li>
+              <li><strong>Prestadores de serviço:</strong> empresas que nos auxiliam na operação (hosting, análise de dados, comunicação)</li>
+              <li><strong>Obrigações legais:</strong> quando exigido por lei, regulamento ou processo legal</li>
+              <li><strong>Proteção de direitos:</strong> para proteger nossos direitos, propriedade ou segurança, e dos nossos usuários</li>
+              <li><strong>Reestruturação empresarial:</strong> em caso de fusão, aquisição ou venda de ativos</li>
+            </ul>
+            
+            <p><strong>Observação:</strong> Não vendemos suas informações pessoais para terceiros.</p>
+          </section>
+
+          <section id="cookies">
+            <h2>4. Cookies e Tecnologias Similares</h2>
+            <p>Utilizamos cookies e tecnologias similares para:</p>
+            
+            <ul class="privacy-list">
+              <li><strong>Funcionalidade essencial:</strong> permitir o funcionamento básico do site</li>
+              <li><strong>Análise e desempenho:</strong> entender como os usuários interagem com nosso site</li>
+              <li><strong>Personalização:</strong> lembrar suas preferências e configurações</li>
+              <li><strong>Publicidade:</strong> exibir anúncios relevantes (com seu consentimento)</li>
+            </ul>
+            
+            <p>Você pode controlar o uso de cookies através das configurações do seu navegador. No entanto, a desativação de cookies essenciais pode afetar a funcionalidade do site.</p>
+          </section>
+
+          <section id="data-security">
+            <h2>5. Segurança de Dados</h2>
+            <p>Implementamos medidas de segurança técnicas e organizacionais para proteger suas informações:</p>
+            
+            <ul class="privacy-list">
+              <li><strong>Criptografia:</strong> dados sensíveis são criptografados em trânsito e em repouso</li>
+              <li><strong>Controle de acesso:</strong> acesso restrito a informações pessoais apenas para funcionários autorizados</li>
+              <li><strong>Monitoramento:</strong> sistemas de detecção e prevenção de intrusões</li>
+              <li><strong>Backups seguros:</strong> cópias de segurança regulares e protegidas</li>
+              <li><strong>Treinamento:</strong> equipe treinada em práticas de segurança de dados</li>
+            </ul>
+            
+            <div class="highlight">
+              <p><strong>Aviso Importante:</strong> Embora implementemos medidas robustas de segurança, nenhum sistema é 100% seguro. Em caso de violação de dados que possa afetar seus direitos, notificaremos as autoridades e os usuários afetados conforme exigido pela LGPD.</p>
+            </div>
+          </section>
+
+          <section id="user-rights">
+            <h2>6. Seus Direitos</h2>
+            <p>De acordo com a Lei Geral de Proteção de Dados (LGPD), você tem os seguintes direitos:</p>
+            
+            <ul class="privacy-list">
+              <li><strong>Confirmação e acesso:</strong> confirmar que processamos seus dados e acessá-los</li>
+              <li><strong>Correção:</strong> retificar dados incompletos, inexatos ou desatualizados</li>
+              <li><strong>Anonimização, bloqueio ou eliminação:</strong> solicitar a limitação do processamento de dados</li>
+              <li><strong>Portabilidade:</strong> receber seus dados em formato estruturado</li>
+              <li><strong>Eliminação:</strong> solicitar a exclusão de dados pessoais processados com consentimento</li>
+              <li><strong>Informação sobre compartilhamento:</strong> saber com quem compartilhamos seus dados</li>
+              <li><strong>Revogação de consentimento:</strong> revogar consentimento a qualquer momento</li>
+              <li><strong>Oposição:</strong> opor-se ao processamento realizado com base no legítimo interesse</li>
+            </ul>
+            
+            <p>Para exercer seus direitos, entre em contato conosco através dos canais indicados no final desta política.</p>
+          </section>
+
+          <section id="data-retention">
+            <h2>7. Retenção de Dados</h2>
+            <p>Mantemos suas informações pessoais apenas pelo tempo necessário para:</p>
+            
+            <ul class="privacy-list">
+              <li>Cumprir os propósitos para os quais foram coletadas</li>
+              <li>Atender requisitos legais, contábeis ou regulatórios</li>
+              <li>Resolver disputas e fazer cumprir nossos acordos</li>
+            </ul>
+            
+            <p>Após o término do período de retenção, os dados serão excluídos ou anonimizados de forma segura.</p>
+          </section>
+
+          <section id="lgpd">
+            <h2>8. Conformidade com a LGPD</h2>
+            <p>O TrabalhoRemotoBR está em conformidade com a Lei Geral de Proteção de Dados (Lei nº 13.709/2018) e possui:</p>
+            
+            <ul class="privacy-list">
+              <li><strong>Encarregado de Dados (DPO):</strong> profissional responsável pela proteção de dados</li>
+              <li><strong>Registro de atividades:</strong> documentação dos processos de tratamento de dados</li>
+              <li><strong>Avaliação de impacto:</strong> análise de riscos para direitos dos titulares</li>
+              <li><strong>Medidas de segurança:</strong> implementação de controles técnicos e administrativos</li>
+              <li><strong>Políticas internas:</strong> diretrizes para funcionários e parceiros</li>
+            </ul>
+          </section>
+
+          <section id="changes">
+            <h2>9. Alterações nesta Política</h2>
+            <p>Podemos atualizar esta Política de Privacidade periodicamente para refletir:</p>
+            
+            <ul class="privacy-list">
+              <li>Mudanças em nossas práticas de coleta e uso de dados</li>
+              <li>Alterações legais ou regulatórias</li>
+              <li>Novos serviços ou funcionalidades</li>
+            </ul>
+            
+            <p>Notificaremos os usuários sobre alterações significativas através de:</p>
+            <ul class="privacy-list">
+              <li>Comunicação por e-mail</li>
+              <li>Aviso em nosso site</li>
+              <li>Notificação no aplicativo (quando aplicável)</li>
+            </ul>
+            
+            <p>A data da última atualização será indicada no topo desta política.</p>
+          </section>
+
+          <section id="contact">
+            <h2>10. Contato</h2>
+            <p>Se você tiver dúvidas, preocupações ou solicitações relacionadas a esta Política de Privacidade ou ao tratamento de seus dados pessoais, entre em contato conosco:</p>
+            
+            <div style="background: rgba(255,255,255,0.05); padding: 16px; border-radius: var(--radius); margin: 16px 0;">
+              <p><strong>Encarregado de Proteção de Dados (DPO)</strong></p>
+              <p>E-mail: <a href="mailto:support@yqh.baby">support@yqh.baby</a></p>
+              <p>Telefone: +55 (11) 1234-5678</p>
+              <p>Endereço: Av. Paulista, 1000 - São Paulo/SP, CEP: 01310-100</p>
+            </div>
+            
+            <p>Você também tem o direito de apresentar reclamação à Autoridade Nacional de Proteção de Dados (ANPD) caso considere que o tratamento de seus dados pessoais viola a legislação aplicável.</p>
+            
+            <div class="security-badge">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 22C12 22 20 18 20 12V5L12 2L4 5V12C4 18 12 22 12 22Z" stroke="#19c37d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M9 12L11 14L15 10" stroke="#19c37d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <span>Suas informações estão seguras e protegidas de acordo com as melhores práticas de segurança e a legislação brasileira.</span>
+            </div>
+          </section>
+          
+          <div style="text-align: center; margin-top: 40px; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.1);">
+            <p class="muted small">Última atualização: 15 de Novembro de 2024</p>
+            <a href="index.html" class="btn btn-orange" style="margin-top: 16px;">Voltar para o Site Principal</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="brand" href="index.html">TrabalhoRemotoBR</a>
+        <p class="muted small">Oportunidades transparentes. Nenhuma renda garantida. Nenhuma taxa de candidatura.</p>
+      </div>
+      <nav class="footer-links">
+        <a href="index.html">Página Inicial</a>
+        <a href="privacy.html">Política de Privacidade</a>
+        <a href="userterms.html">Termos de Serviço</a>
+      </nav>
+    </div>
+    <div class="container">
+      <p class="muted small">© 2024 TrabalhoRemotoBR. Todos os direitos reservados. Os ganhos mostrados são apenas exemplos e não garantias. Seus ganhos reais dependem de suas habilidades, tempo e disponibilidade das tarefas.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Smooth scrolling for table of contents links
+      document.querySelectorAll('.toc a').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+          e.preventDefault();
+          
+          const targetId = this.getAttribute('href');
+          const targetElement = document.querySelector(targetId);
+          
+          if (targetElement) {
+            targetElement.scrollIntoView({
+              behavior: 'smooth',
+              block: 'start'
+            });
+            
+            // Update URL without page reload
+            history.pushState(null, null, targetId);
+          }
+        });
+      });
+      
+      // Add fade-in animations
+      const observerOptions = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.1
+      };
+      
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('fade-in');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, observerOptions);
+      
+      document.querySelectorAll('.fade-in').forEach(el => {
+        observer.observe(el);
+      });
+    });
+  </script>
+</body>
+</html>
